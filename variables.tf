@@ -3,9 +3,9 @@
 ##################################################################################
 
 variable "environment" {
-  type = string
+  type        = string
   description = "(Optional) The environment of all the resources"
-  default = "development"
+  default     = "development"
 }
 variable "region" {
   type        = string
