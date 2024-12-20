@@ -35,3 +35,7 @@ variable "environment" {
   default     = "dev"
 }
 
+variable "billing_code" {
+  type        = string
+  description = "(Optional) Billing code to use for all resources in this module"
+}
