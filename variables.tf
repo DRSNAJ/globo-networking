@@ -37,5 +37,5 @@ variable "environment" {
 
 variable "billing_code" {
   type        = string
-  description = "(Optional) Billing code to use for all resources in this module"
+  description = "(Required) Billing code to use for all resources in this module"
 }
