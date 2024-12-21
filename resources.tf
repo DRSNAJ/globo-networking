@@ -66,5 +66,5 @@ resource "aws_security_group" "ingress" {
 
 import {
   to = aws_security_group.ingress
-  id = "NoIngressSecurityGroup" #NoIngressSecurityGroup
+  id = "sg-01a2714974f77a0a4" #NoIngressSecurityGroup
 }
