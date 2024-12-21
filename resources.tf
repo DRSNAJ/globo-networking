@@ -63,3 +63,8 @@ resource "aws_security_group" "ingress" {
   tags_all               = {}
   vpc_id                 = "vpc-0860be80f6e7e0393"
 }
+
+import {
+  to = aws_security_group.ingress
+  id = "sg-01a2714974f77a0a4" #NoIngressSecurityGroup
+}
