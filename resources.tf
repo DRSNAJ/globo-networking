@@ -19,6 +19,7 @@ locals {
   common_tags = {
     environment  = var.environment
     billing_code = var.billing_code
+    workspace    = terraform.workspace
   }
 }
 
@@ -62,4 +63,9 @@ resource "aws_security_group" "ingress" {
   tags                   = {}
   tags_all               = {}
   vpc_id                 = "vpc-0860be80f6e7e0393"
+}
+
+import {
+  to = aws_security_group.ingress
+  id = "sg-01a2714974f77a0a4" #NoIngressSecurityGroup
 }
